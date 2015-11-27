@@ -1,0 +1,10 @@
+PODS:
+  - RBBorderView (1.0.0)
+
+DEPENDENCIES:
+  - RBBorderView
+
+SPEC CHECKSUMS:
+  RBBorderView: b02602807c2b07d67a84f75c0c99c516e6e3a83b
+
+COCOAPODS: 0.39.0
