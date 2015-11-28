@@ -14,7 +14,7 @@
 		C08C09931C08182000A69EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C09911C08182000A69EDD /* Main.storyboard */; };
 		C08C09951C08182000A69EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08C09941C08182000A69EDD /* Assets.xcassets */; };
 		C08C09981C08182000A69EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C09961C08182000A69EDD /* LaunchScreen.storyboard */; };
-		C08C09A21C08185000A69EDD /* DDCanlendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C09A11C08185000A69EDD /* DDCanlendarPicker.m */; };
+		C08C09A21C08185000A69EDD /* DDCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C09A11C08185000A69EDD /* DDCalendarPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		C08C09941C08182000A69EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08C09971C08182000A69EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C08C09991C08182000A69EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C08C09A01C08185000A69EDD /* DDCanlendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCanlendarPicker.h; sourceTree = "<group>"; };
-		C08C09A11C08185000A69EDD /* DDCanlendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCanlendarPicker.m; sourceTree = "<group>"; };
+		C08C09A01C08185000A69EDD /* DDCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCalendarPicker.h; sourceTree = "<group>"; };
+		C08C09A11C08185000A69EDD /* DDCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCalendarPicker.m; sourceTree = "<group>"; };
 		D70A0FADCA5928DBF9A07F18 /* libPods-DDCalendarPickerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDCalendarPickerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,8 +110,8 @@
 		C08C099F1C08183B00A69EDD /* DDCalendarPicker */ = {
 			isa = PBXGroup;
 			children = (
-				C08C09A01C08185000A69EDD /* DDCanlendarPicker.h */,
-				C08C09A11C08185000A69EDD /* DDCanlendarPicker.m */,
+				C08C09A01C08185000A69EDD /* DDCalendarPicker.h */,
+				C08C09A11C08185000A69EDD /* DDCalendarPicker.m */,
 			);
 			path = DDCalendarPicker;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08C09A21C08185000A69EDD /* DDCanlendarPicker.m in Sources */,
+				C08C09A21C08185000A69EDD /* DDCalendarPicker.m in Sources */,
 				C08C09901C08182000A69EDD /* ViewController.m in Sources */,
 				C08C098D1C08182000A69EDD /* AppDelegate.m in Sources */,
 				C08C098A1C08182000A69EDD /* main.m in Sources */,

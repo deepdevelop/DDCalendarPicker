@@ -6,7 +6,7 @@
 //  Copyright © 2015年 Rent Vogue. All rights reserved.
 //
 
-#import "DDCanlendarPicker.h"
+#import "DDCalendarPicker.h"
 #import "UIView+RBAddition.h"
 
 #define kDDCalendarPickerWeekDay @[@"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六"]
@@ -21,7 +21,7 @@ static NSInteger const MutiplePickDayButtonTag = 88776;
 
 @end
 
-@interface DDCanlendarPicker ()
+@interface DDCalendarPicker ()
 @property (strong, nonatomic) UIScrollView *mutiplePickDaysScrollView;
 @property (copy, nonatomic) NSArray<NSNumber *> *mutiplePickDays;
 
@@ -59,7 +59,7 @@ static NSInteger const MutiplePickDayButtonTag = 88776;
 @property (strong, nonatomic) UIImage *followingMonthButtonImage;
 @end
 
-@implementation DDCanlendarPicker
+@implementation DDCalendarPicker
 
 - (instancetype)init {
     self = [self initWithFrame:CGRectZero];

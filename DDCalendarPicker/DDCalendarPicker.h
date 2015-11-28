@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol DDCanlendarPickerDelegate <NSObject>
+@protocol DDCalendarPickerDelegate <NSObject>
 
 - (void)pickedAtBegin:(NSDate *)beginDate end:(NSDate *)endDate;
 
 @end
 
-@interface DDCanlendarPicker : UIView
+@interface DDCalendarPicker : UIView
 @property (strong, readonly, nonatomic) NSDate *beginDate;
 @property (strong, readonly, nonatomic) NSDate *endDate;
 
-@property (weak, nonatomic) id<DDCanlendarPickerDelegate> timePickerDelegate;
+@property (weak, nonatomic) id<DDCalendarPickerDelegate> timePickerDelegate;
 
 - (void)setupMutipleDays:(NSArray<NSNumber *> *)days defaultChoose:(NSUInteger)defaultChoose;
 @end

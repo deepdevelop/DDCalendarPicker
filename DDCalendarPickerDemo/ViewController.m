@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "DDCanlendarPicker.h"
+#import "DDCalendarPicker.h"
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet DDCanlendarPicker *canlendarPicker;
+@interface ViewController () <DDCalendarPickerDelegate>
+@property (weak, nonatomic) IBOutlet DDCalendarPicker *calendarPicker;
 
 @end
 
@@ -19,9 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [_canlendarPicker setupMutipleDays:@[@4, @8, @20, @100] defaultChoose:0];
+    [_calendarPicker setupMutipleDays:@[@4, @8, @20, @100] defaultChoose:0];
+    _calendarPicker.timePickerDelegate = self;
     
-    DDCanlendarPicker *picker2 = [[DDCanlendarPicker alloc] initWithFrame:CGRectMake(0, 400, CGRectGetWidth([UIScreen mainScreen].bounds), 312)];
+    DDCalendarPicker *picker2 = [[DDCalendarPicker alloc] initWithFrame:CGRectMake(0, 400, CGRectGetWidth([UIScreen mainScreen].bounds), 312)];
     [picker2 setupMutipleDays:@[@4, @8, @20, @100] defaultChoose:0];
     [self.view addSubview:picker2];
 }
@@ -29,6 +30,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - DDCalendarPicker Delegate
+
+- (void)pickedAtBegin:(NSDate *)beginDate end:(NSDate *)endDate {
+    NSLog(@"picked at begin %@, end %@", beginDate, endDate);
 }
 
 @end
